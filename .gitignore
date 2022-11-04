@@ -1,0 +1,8 @@
+build
+build-vbcc
+uae/dh0/hello
+.DS_Store
+bin
+!bin/config
+!bin/targets
+.vscode/ipch

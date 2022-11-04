@@ -1,0 +1,6 @@
+# Ignore everything in this directory
+*
+# Except this file and folders
+!.gitignore
+!dh0/c/
+!dh0/s/
