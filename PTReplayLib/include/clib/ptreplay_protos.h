@@ -1,3 +1,7 @@
+#ifndef CLIB_PTREPLAY_PROTOS_H
+#define CLIB_PTREPLAY_PROTOS_H
+
+
 /*** PROTOS FOR PTREPLAY.LIBRARY ***/
 
 struct Module *PTLoadModule(STRPTR);
@@ -29,3 +33,5 @@ BYTE PTGetPri(void);
 /* New in V6 */
 BYTE PTGetChan(void);
 struct PTSample *PTGetSample(struct Module *,WORD);
+
+#endif	/*  CLIB_PTREPLAY_PROTOS_H  */
