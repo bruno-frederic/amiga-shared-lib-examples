@@ -52,12 +52,19 @@ uae/dh0/LibrariesAuto : LibrariesAuto.C
 	$(CC) +aos68k -g -v $< -lauto -o $@ \
 	      -I%VBCC%/targets/m68k-amigaos/include -I%VBCC%/NDK3.2R4/Include_H
 
+# Exemple d'utilisation de PTReplay.library avec génération de fichier include proto + inline :
+subsystem:
+	$(MAKE) -C PTReplayLib
 
-$(ADF) : uae/dh0/Libraries uae/dh0/Libraries-no-inline uae/dh0/LibrariesAuto uae/dh0/s/Startup-Sequence
+
+$(ADF) : uae/dh0/Libraries uae/dh0/Libraries-no-inline uae/dh0/LibrariesAuto \
+		 uae/dh0/s/Startup-Sequence subsystem
+# Avec subsystem en dépendance, ça régénère à chaque fois l'ADF
 	-$(RM) $(ADF)
 	exe2adf --directory uae/dh0 --label $(notdir $(CURDIR)) --adf $(ADF)
 
 clean:
+	$(MAKE) -C PTReplayLib clean
 	-$(RM) $(subst /,$(PATHSEP),uae/dh0/*)
 	-$(RM) $(ADF)
 	-$(RM) $(subst /,$(PATHSEP),$(UAE_CACHE_FILE))

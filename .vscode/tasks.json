@@ -9,16 +9,16 @@
             "windows": {
                 "options": {
                     "env": {
-                        "VBCC": "bin",
-                        "PATH": "bin"
+                        "VBCC": "${workspaceFolder}/bin",
+                        "PATH": "${workspaceFolder}/bin"
                     }
                 },
-                "command": "bin\\make"
+                "command": "make"
             },
             "osx": {
                 "options": {
                     "env": {
-                        "VBCC": "bin"
+                        "VBCC": "${workspaceFolder}/bin"
                     }
                 },
                 "command": "export PATH=$VBCC:$PATH; make"
@@ -26,7 +26,7 @@
             "linux": {
                 "options": {
                     "env": {
-                        "VBCC": "bin"
+                        "VBCC": "${workspaceFolder}/bin"
                     }
                 },
                 "command": "export PATH=$VBCC:$PATH; make"
@@ -53,16 +53,16 @@
             "windows": {
                 "options": {
                     "env": {
-                        "VBCC": "bin",
-                        "PATH": "bin"
+                        "VBCC": "${workspaceFolder}/bin",
+                        "PATH": "${workspaceFolder}/bin"
                     }
                 },
-                "command": "bin\\make clean"
+                "command": "make clean"
             },
             "osx": {
                 "options": {
                     "env": {
-                        "VBCC": "bin"
+                        "VBCC": "${workspaceFolder}/bin"
                     }
                 },
                 "command": "export PATH=$VBCC:$PATH; make clean"
@@ -70,7 +70,7 @@
             "linux": {
                 "options": {
                     "env": {
-                        "VBCC": "bin"
+                        "VBCC": "${workspaceFolder}/bin"
                     }
                 },
                 "command": "export PATH=$VBCC:$PATH; make clean"

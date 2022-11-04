@@ -69,7 +69,7 @@
             "emulatorStartDelay": 1500,
             "emulator": "${workspaceFolder}/bin/winuae.exe",
             "emulatorWorkingDir": "${workspaceFolder}/bin",
-            "program": "${workspaceFolder}/uae/dh0/LibrariesAuto",
+            "program": "${workspaceFolder}/uae/dh0/SmallPlay",
             "options": [
                 "-s",
                 "${input:pickQuickStartConfig}",
@@ -106,7 +106,7 @@
                 "filesystem=rw,dh0:${workspaceFolder}\\uae\\dh0",
                 // Must be exactly the command in Startup-Sequence, with same path (without arg) :
                 "-s",
-                "debugging_trigger=LibrariesAuto",
+                "debugging_trigger=SmallPlay",
                 "-s",
                 "debugging_features=gdbserver"
             ],
