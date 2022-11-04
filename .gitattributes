@@ -5,3 +5,4 @@
 *                 text=auto
 
 Startup-Sequence text eol=lf
+ptreplay_lib.fd text eol=lf

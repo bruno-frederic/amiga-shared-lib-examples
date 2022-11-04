@@ -1,0 +1,14 @@
+
+                         SmallPlay 2.0
+
+
+SmallPlay is a small utillity to play a module from a shell window.
+
+Syntax:
+SmallPlay "Name of module"
+
+It will then load and play the given module and return when the module is
+finished.
+
+Pressing CTRL-C will do a nice fade-down and stop the module before it
+returns.
