@@ -1,7 +1,9 @@
-Libraries
-Libraries-no-inline
-
+RawDoFmt
 Pause
+
+Libraries
+
+Libraries-no-inline
 
 ; Test de la version du Kickstart (test plantant en 1.0)
 ; 31=1.1 (NTSC) ; 32=1.1 (PAL); 33=1.2 ; 34=1.3
